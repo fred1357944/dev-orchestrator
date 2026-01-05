@@ -66,7 +66,7 @@
 {
   "name": "krush",
   "display_name": "KRUSH 舞蹈教室",
-  "path": "/Users/migu/projects/krush-dashboard",
+  "path": "/path/to/your/project",
   "description": "KRUSH 舞蹈教室的營運數據分析儀表板",
 
   "frontend": {
@@ -247,7 +247,7 @@
     "krush": {
       "name": "krush",
       "display_name": "KRUSH 舞蹈教室",
-      "path": "/Users/migu/projects/krush-dashboard",
+      "path": "/path/to/your/project",
       "description": "KRUSH 舞蹈教室營運分析",
       "frontend": {
         "enabled": true,
@@ -276,7 +276,7 @@
     "food-map": {
       "name": "food-map",
       "display_name": "美食地圖",
-      "path": "/Users/migu/projects/food-delivery-map",
+      "path": "/path/to/another/project",
       "description": "外送美食地圖視覺化專案",
       "frontend": {
         "enabled": true,
@@ -409,14 +409,14 @@ module.exports = {
       name: 'krush-fe',
       script: 'streamlit',
       args: 'run app.py --server.port 3001',
-      cwd: '/Users/migu/projects/krush-dashboard',
+      cwd: '/path/to/your/project',
       env: { ... }
     },
     {
       name: 'krush-be',
       script: 'python',
       args: '-m uvicorn api.main:app --port 8001',
-      cwd: '/Users/migu/projects/krush-dashboard',
+      cwd: '/path/to/your/project',
       env: { ... }
     }
   ]

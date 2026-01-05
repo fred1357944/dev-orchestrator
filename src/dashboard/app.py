@@ -17,7 +17,7 @@ from src.core.port_manager import PortManager
 # Page config
 st.set_page_config(
     page_title="Dev Orchestrator",
-    page_icon=None,
+    page_icon="🔌",
     layout="wide",
     initial_sidebar_state="expanded"
 )
