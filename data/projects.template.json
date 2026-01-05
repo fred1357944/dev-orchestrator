@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "projects": {},
+  "port_allocation": {
+    "frontend_range": {
+      "start": 3000,
+      "end": 3099,
+      "reserved": [3000]
+    },
+    "backend_range": {
+      "start": 8000,
+      "end": 8099,
+      "reserved": [8501]
+    },
+    "allocated": {}
+  },
+  "settings": {
+    "auto_generate_env": true,
+    "env_file_name": ".env.local",
+    "pm2_ecosystem_path": "./ecosystem.config.js",
+    "log_retention_days": 7,
+    "health_check_interval": 60,
+    "dashboard_port": 8500,
+    "default_tags": ["local"]
+  },
+  "metadata": {
+    "created_at": "",
+    "last_modified": "",
+    "last_modified_by": "system",
+    "total_projects": 0,
+    "active_projects": 0
+  }
+}

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dev-orchestrator"
+version = "1.0.0"
+description = "Local Development Environment Manager with Claude AI Integration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Developer"}
+]
+dependencies = [
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    "mcp>=1.0.0",
+    "streamlit>=1.28",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+dev-orchestrator = "src.dashboard.app:main"
+dev-mcp = "src.mcp_server.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
