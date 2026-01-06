@@ -16,7 +16,7 @@
 ### 1. Clone 並設定
 
 ```bash
-git clone https://github.com/your-username/dev-orchestrator.git
+git clone https://github.com/fred1357944/dev-orchestrator.git
 cd dev-orchestrator
 
 # 建立虛擬環境
